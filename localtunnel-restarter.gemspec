@@ -14,6 +14,7 @@ Gem::Specification.new do |spec|
   spec.homepage      = "https://github.com/kirillweb"
   spec.license       = "MIT"
 
+  spec.files         = `git ls-files -z`.split("\x0")
   spec.executables   = ["localtunnel-restarter"]
   spec.require_paths = ["lib"]
 end
