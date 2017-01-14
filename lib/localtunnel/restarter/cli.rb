@@ -22,8 +22,8 @@ module Localtunnel
           launch_count += 1
           if options[:port]
             p "Running localtunnel for the #{ordinalize(launch_count)} time"
-            `lt --port #{options[:port]} --subdomain #{options[:subdomain]}`
             p "Link: https://#{options[:subdomain]}.localtunnel.me/"
+            `lt --port #{options[:port]} --subdomain #{options[:subdomain]}`
           else
             p 'Option --port is required'
             p 'Try to use something like this: localtunnel-restarter --port 9292'
