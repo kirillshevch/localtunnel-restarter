@@ -4,6 +4,7 @@
 # first when searching the load path
 $LOAD_PATH.unshift File.expand_path('../../lib', __FILE__)
 
+require 'optparse'
 require 'localtunnel/restarter'
 
 Localtunnel::Restarter::CLI.run
