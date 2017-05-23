@@ -4,7 +4,7 @@ module Localtunnel
       def self.run
         options = { subdomain: default_subdomain, port: nil }
 
-        parser = OptionParser.new do |opts|
+        parser = ::OptionParser.new do |opts|
           opts.on('-s', '--subdomain subdomain', 'Subdomain') do |subdomain|
             options[:subdomain] = subdomain;
           end
